@@ -16,6 +16,8 @@ static void btn_handler(void *param)
 ~~~
 ### Code example (static usage)
 ~~~cpp
+#include "esp_buttons.h"
+
 buttons btn;
 btn.add(GPIO_NUM_13, btn_handler, POSEDGE, (void *)"BUTTON 1 PIN 13 PRESSED");
 btn.add(GPIO_NUM_12, btn_handler, NEGEDGE, (void *)"BUTTON 2 PIN 12 PRESSED");
