@@ -2,7 +2,8 @@
 
 Description: This library allows you to dynamically or statically add a button handling functionality to your project just in a few lines of code.
 It creates a service task in the background that configures the pin of ESP32 gpio port and keeps polling it for activity.
-If the activity were detected the related callback function is being called.
+If the activity were detected the related callback function is being called. The POSEDGE or NEGEDGE parameter specifies the way how the button is connected to the pin.
+POSEDGE means that the button is connected between the supply voltage and pin and NEGEDGE that the button is connected between pin and ground.
 
 ## Example of use
 ### Callback function
