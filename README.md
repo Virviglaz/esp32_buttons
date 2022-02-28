@@ -28,8 +28,8 @@ btn.add(GPIO_NUM_14, btn_handler, NEGEDGE, (void *)"BUTTON 3 PIN 14 PRESSED");
 ~~~cpp
 buttons *btn = new buttons();
 btn->add(GPIO_NUM_13, btn_handler, POSEDGE, (void *)"BUTTON 1 PIN 13");
-btn->add(GPIO_NUM_12, btn_handler, NEGEDGE, (void *)"BUTTON 1 PIN 12");
-btn->add(GPIO_NUM_14, btn_handler, NEGEDGE, (void *)"BUTTON 1 PIN 14");
+btn->add(GPIO_NUM_12, btn_handler, NEGEDGE, (void *)"BUTTON 2 PIN 12");
+btn->add(GPIO_NUM_14, btn_handler, NEGEDGE, (void *)"BUTTON 3 PIN 14");
 ~~~
 ### Release the resources
 ~~~cpp
